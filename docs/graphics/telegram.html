@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { display: flex; align-items: center; justify-content: center; min-height: 100vh; background: #0a0a0a; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+  .card {
+    width: 1200px; height: 675px;
+    background: linear-gradient(145deg, #0a1520 0%, #0c1a2e 40%, #0f1e35 100%);
+    border-radius: 24px;
+    padding: 72px 80px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: -200px; right: -200px;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(56,189,248,0.12) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .card::after {
+    content: '';
+    position: absolute;
+    bottom: -150px; left: -100px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(14,165,233,0.08) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .top { position: relative; z-index: 1; }
+  .badge {
+    display: inline-block;
+    background: rgba(56,189,248,0.15);
+    border: 1px solid rgba(56,189,248,0.3);
+    color: #38bdf8;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 8px 18px;
+    border-radius: 100px;
+    margin-bottom: 32px;
+  }
+  .title {
+    font-size: 52px;
+    font-weight: 700;
+    color: #f1f5f9;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    max-width: 750px;
+  }
+  .title span { color: #38bdf8; }
+  .desc {
+    font-size: 20px;
+    color: #94a3b8;
+    line-height: 1.6;
+    max-width: 640px;
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+  }
+  .logo { font-size: 22px; font-weight: 700; color: #f1f5f9; letter-spacing: -0.5px; }
+  .logo span { color: #38bdf8; }
+  .url { font-size: 16px; color: #64748b; font-weight: 500; }
+  .chat-mock {
+    position: absolute;
+    right: 55px;
+    top: 50%;
+    transform: translateY(-52%);
+    z-index: 0;
+    opacity: 0.1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+  }
+  .msg {
+    padding: 12px 18px;
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 260px;
+  }
+  .msg-user {
+    background: rgba(56,189,248,0.25);
+    color: #38bdf8;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+    margin-left: auto;
+  }
+  .msg-bot {
+    background: rgba(255,255,255,0.08);
+    color: #94a3b8;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+  }
+  .dots {
+    position: absolute;
+    top: 40px; right: 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 8px);
+    gap: 12px;
+    opacity: 0.15;
+    z-index: 0;
+  }
+  .dots div { width: 8px; height: 8px; background: #38bdf8; border-radius: 50%; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="dots">
+    <div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div>
+  </div>
+  <div class="chat-mock">
+    <div class="msg msg-user">Flights from Atlanta to Miami</div>
+    <div class="msg msg-bot">
+      ATL → MIA · Mar 15<br>
+      1. British Airways — $83.68<br>
+      2. American — $85.02<br>
+      3. Delta — $91.40
+    </div>
+  </div>
+  <div class="top">
+    <div class="badge">Live Now</div>
+    <div class="title"><span>Telegram Bot</span> for Real-Time Flights</div>
+    <div class="desc">Search real-time flights without opening a browser. Send a message, get actual airline prices — same Duffel API results as the web dashboard, right in your Telegram chats.</div>
+  </div>
+  <div class="bottom">
+    <div class="logo">Zentr<span>Fi</span></div>
+    <div class="url">zentrfi.com</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { display: flex; align-items: center; justify-content: center; min-height: 100vh; background: #0a0a0a; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+  .card {
+    width: 1200px; height: 675px;
+    background: linear-gradient(145deg, #0f1729 0%, #0a1628 40%, #111d35 100%);
+    border-radius: 24px;
+    padding: 72px 80px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: -200px; right: -200px;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(99,102,241,0.12) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .card::after {
+    content: '';
+    position: absolute;
+    bottom: -150px; left: -100px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(59,130,246,0.08) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .top { position: relative; z-index: 1; }
+  .badge {
+    display: inline-block;
+    background: rgba(99,102,241,0.15);
+    border: 1px solid rgba(99,102,241,0.3);
+    color: #818cf8;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 8px 18px;
+    border-radius: 100px;
+    margin-bottom: 32px;
+  }
+  .title {
+    font-size: 52px;
+    font-weight: 700;
+    color: #f1f5f9;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    max-width: 750px;
+  }
+  .title span { color: #818cf8; }
+  .desc {
+    font-size: 20px;
+    color: #94a3b8;
+    line-height: 1.6;
+    max-width: 680px;
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+  }
+  .logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #f1f5f9;
+    letter-spacing: -0.5px;
+  }
+  .logo span { color: #818cf8; }
+  .url {
+    font-size: 16px;
+    color: #64748b;
+    font-weight: 500;
+  }
+  .icon-group {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    opacity: 0.12;
+  }
+  .icon-group svg { width: 180px; height: 180px; }
+  .dots {
+    position: absolute;
+    top: 40px; right: 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 8px);
+    gap: 12px;
+    opacity: 0.15;
+    z-index: 0;
+  }
+  .dots div {
+    width: 8px; height: 8px;
+    background: #818cf8;
+    border-radius: 50%;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="dots">
+    <div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div>
+  </div>
+  <div class="top">
+    <div class="badge">New Feature</div>
+    <div class="title">Wallet-to-Wallet <span>Encrypted Messaging</span></div>
+    <div class="desc">Chat and share travel itineraries using nothing but your wallet address. Powered by XMTP — no email, no phone number, no account required.</div>
+  </div>
+  <div class="bottom">
+    <div class="logo">Zentr<span>Fi</span></div>
+    <div class="url">zentrfi.com</div>
+  </div>
+  <svg style="position:absolute;right:70px;top:50%;transform:translateY(-60%);opacity:0.06;z-index:0" width="260" height="260" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+    <path d="M8 10h.01M12 10h.01M16 10h.01"/>
+  </svg>
+</div>
+</body>
+</html>

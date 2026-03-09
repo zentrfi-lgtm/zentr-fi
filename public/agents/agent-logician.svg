@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#090551" stop-opacity=".16"/>
+      <stop offset=".6" stop-color="#0000fe" stop-opacity=".20"/>
+      <stop offset="1" stop-color="#060445" stop-opacity=".14"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="92" height="92" rx="22" fill="url(#g)" stroke="#060445" stroke-opacity=".18"/>
+  <path d="M26 46c0-12 10-22 22-22h0c12 0 22 10 22 22v14c0 12-10 22-22 22h0c-12 0-22-10-22-22V46Z" fill="#fff" fill-opacity=".85"/>
+  <path d="M34 50h8M54 50h8" stroke="#060445" stroke-opacity=".65" stroke-width="4" stroke-linecap="round"/>
+  <path d="M36 66h24" stroke="#0000fe" stroke-opacity=".9" stroke-width="3" stroke-linecap="round"/>
+  <path d="M34 74h28" stroke="#090551" stroke-opacity=".35" stroke-width="2" stroke-linecap="round"/>
+  <text x="48" y="18" text-anchor="middle" font-size="10" fill="#060445" fill-opacity=".7" font-family="Arial, sans-serif">LOGICIAN</text>
+</svg>

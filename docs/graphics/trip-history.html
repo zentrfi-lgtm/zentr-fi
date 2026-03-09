@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { display: flex; align-items: center; justify-content: center; min-height: 100vh; background: #0a0a0a; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+  .card {
+    width: 1200px; height: 675px;
+    background: linear-gradient(145deg, #17120a 0%, #1a160d 40%, #1f1a10 100%);
+    border-radius: 24px;
+    padding: 72px 80px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: -200px; right: -200px;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(245,158,11,0.12) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .card::after {
+    content: '';
+    position: absolute;
+    bottom: -150px; left: -100px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(251,191,36,0.08) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .top { position: relative; z-index: 1; }
+  .badge {
+    display: inline-block;
+    background: rgba(245,158,11,0.15);
+    border: 1px solid rgba(245,158,11,0.3);
+    color: #fbbf24;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 8px 18px;
+    border-radius: 100px;
+    margin-bottom: 32px;
+  }
+  .title {
+    font-size: 52px;
+    font-weight: 700;
+    color: #f1f5f9;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    max-width: 750px;
+  }
+  .title span { color: #fbbf24; }
+  .desc {
+    font-size: 20px;
+    color: #94a3b8;
+    line-height: 1.6;
+    max-width: 680px;
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+  }
+  .logo { font-size: 22px; font-weight: 700; color: #f1f5f9; letter-spacing: -0.5px; }
+  .logo span { color: #fbbf24; }
+  .url { font-size: 16px; color: #64748b; font-weight: 500; }
+  .booking-mock {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-55%);
+    z-index: 0;
+    opacity: 0.1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .booking-card {
+    width: 260px;
+    border: 1.5px solid #fbbf24;
+    border-radius: 12px;
+    padding: 16px 20px;
+  }
+  .booking-route {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fbbf24;
+    margin-bottom: 6px;
+  }
+  .booking-detail {
+    font-size: 13px;
+    color: #94a3b8;
+    line-height: 1.5;
+  }
+  .booking-status {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 3px 10px;
+    background: rgba(16,185,129,0.2);
+    border: 1px solid rgba(16,185,129,0.3);
+    color: #34d399;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .dots {
+    position: absolute;
+    top: 40px; right: 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 8px);
+    gap: 12px;
+    opacity: 0.15;
+    z-index: 0;
+  }
+  .dots div { width: 8px; height: 8px; background: #fbbf24; border-radius: 50%; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="dots">
+    <div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div>
+  </div>
+  <div class="booking-mock">
+    <div class="booking-card">
+      <div class="booking-route">ATL → MIA</div>
+      <div class="booking-detail">British Airways · $83.68<br>Direct · 1h 51m</div>
+      <div class="booking-status">Confirmed</div>
+    </div>
+    <div class="booking-card">
+      <div class="booking-route">JFK → LAX</div>
+      <div class="booking-detail">Delta · $142.30<br>Direct · 5h 20m</div>
+      <div class="booking-status">Confirmed</div>
+    </div>
+  </div>
+  <div class="top">
+    <div class="badge">New Feature</div>
+    <div class="title">Persistent <span>Trip History</span></div>
+    <div class="desc">Your wallet is your account. Every booking is stored and linked to your wallet address — connect anytime and your complete travel history is right there. No passwords, no recovery emails.</div>
+  </div>
+  <div class="bottom">
+    <div class="logo">Zentr<span>Fi</span></div>
+    <div class="url">zentrfi.com</div>
+  </div>
+</div>
+</body>
+</html>

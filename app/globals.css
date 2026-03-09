@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+:root {
+  /* Zentrfi brand */
+  --z-blue: #0000fe;
+  --z-deep-1: #090551;
+  --z-deep-2: #060445;
+
+  --background: #ffffff; /* pure white */
+  --foreground: #0b0b12;
+
+  /* keep surfaces ultra-white; tint panels very lightly */
+  --panel: rgba(9, 5, 81, 0.035);
+  --panel-strong: rgba(6, 4, 69, 0.055);
+  --border: rgba(6, 4, 69, 0.12);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-kanit);
+
+  --color-z-blue: var(--z-blue);
+  --color-z-deep-1: var(--z-deep-1);
+  --color-z-deep-2: var(--z-deep-2);
+  --color-panel: var(--panel);
+  --color-panel-strong: var(--panel-strong);
+  --color-border: var(--border);
+}
+
+body {
+  background: #ffffff;
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, -apple-system, Segoe UI, Roboto,
+    Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+html {
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+/* Offset anchor scroll for sticky navbar */
+[id] {
+  scroll-margin-top: 80px;
+}
+
+/* Utility-ish helpers (Tailwind v4 project, but sometimes you want a named class) */
+.z-gradient-hero {
+  background: radial-gradient(
+      1200px 600px at 15% 10%,
+      rgba(0, 0, 254, 0.22),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 500px at 85% 20%,
+      rgba(9, 5, 81, 0.55),
+      transparent 55%
+    ),
+    linear-gradient(135deg, var(--z-deep-1), var(--z-deep-2));
+}
+
+.z-text-gradient {
+  background: linear-gradient(90deg, var(--z-blue), #5b7cff 55%, #ffffff 110%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

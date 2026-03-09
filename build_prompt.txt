@@ -1,0 +1,515 @@
+Zentrfi Web4 AI Travel Swarm — Full Frontend Build Prompt
+
+Build a modern futuristic Web4 travel orchestration platform called Zentrfi (Zentra Finance).
+
+Zentrfi is an AI-powered travel planning swarm where specialized AI agents collaborate to plan, optimize, negotiate, and execute travel bookings.
+
+The UI should feel like a next-generation AI control center, combining elements of ChatGPT, Stripe, Tesla UI, and a futuristic travel dashboard.
+
+The design must be extremely polished, animated, and interactive.
+
+Core Product Concept
+
+Zentrfi is not just a travel search engine.
+
+It is a Web4 AI swarm that autonomously plans and executes travel bookings.
+
+Users simply describe their trip using natural language.
+
+Example prompt:
+
+“I want to travel to California from Florida on the 7th of this month with a budget of $100.”
+
+Once submitted:
+
+AI agents analyze the request
+
+The system generates travel options
+
+The user provides booking details
+
+The user signs a wallet transaction that deposits funds into escrow
+
+A backend worker continuously scans airline APIs for the cheapest option
+
+When a suitable flight is found, the system books it automatically
+
+The ticket receipt is delivered to the user's email
+
+The frontend should simulate this process visually.
+
+Animation
+Framer Motion
+
+3D Graphics
+Three.js
+
+Particle Effects
+Particles.js
+
+Maps
+Mapbox GL JS
+
+Wallet Integration
+WalletConnect v2
+
+Blockchain
+Base Chain (EVM compatible)
+
+Environment Variables
+
+Include support for this variable:
+
+VITE_GEMINI_API_KEY=AIzaSyBZpeX5o2Se5QWCclGOQAQhK0_yuSRYPP4
+VITE_WALLETCONNECT_PROJECT_ID="5261912a5c184ed019675c830f491d1a"
+
+Branding
+
+Platform Name
+
+Zentrfi
+Full Name: Zentra Finance
+
+Logo
+
+Use this logo:
+
+https://pbs.twimg.com/profile_images/2024770639400251392/dTwUzCaT_400x400.jpg
+
+Color System
+
+Primary
+
+#0000FE
+
+Dark Gradient
+
+#090551
+#060445
+
+Background
+
+#FFFFFF
+
+Use gradients between the dark blues for hero sections and AI panels.
+
+Typography
+
+Primary Font
+
+Kanit
+
+Secondary Font
+
+Inter
+
+Use Kanit for headers and UI labels.
+Use Inter for body text.
+
+Visual Theme
+
+The platform should feel like:
+
+futuristic
+
+AI-driven
+
+Web4 native
+
+crypto-enabled
+
+travel-focused
+
+Include visuals such as:
+
+AI robot caricatures
+
+animated airplanes
+
+world maps
+
+swarm-like particle animations
+
+futuristic dashboards
+
+holographic travel routes
+
+Animations
+
+Use multiple animation systems:
+
+Framer Motion
+
+scroll reveal animations
+
+component transitions
+
+hero entrance animations
+
+Particles.js
+
+floating background particles
+
+AI swarm visual effect
+
+Three.js
+
+interactive 3D airplane
+
+rotating globe
+
+flight path arcs
+
+Animations should feel smooth and premium.
+
+Required Pages
+
+Build the following pages.
+
+Landing Page
+
+This page should feel very premium and visually explosive.
+
+Sections:
+
+Hero Section
+
+Include:
+
+large headline
+
+particle background
+
+animated globe
+
+3D airplane flying across routes
+
+call-to-action buttons
+
+Headline example:
+
+“Travel Planned by AI. Executed by Autonomous Agents.”
+
+CTA Buttons
+
+Start Planning
+
+Explore How It Works
+
+Feature Section
+
+Explain the AI swarm architecture.
+
+Agent roles:
+
+Scout
+Discovers destinations and travel trends.
+
+Logician
+Optimizes routes and travel schedules.
+
+Auditor
+Manages budgets and financial constraints.
+
+Negotiator
+Communicates with booking APIs to secure the best rates.
+
+Each role should be shown with robot caricature illustrations.
+
+How It Works Section
+
+Display the travel process visually:
+
+Step 1
+User submits travel prompt
+
+Step 2
+AI swarm analyzes the request
+
+Step 3
+Best travel options generated
+
+Step 4
+User signs escrow transaction
+
+Step 5
+Booking executed automatically
+
+Step 6
+Ticket delivered to email
+
+Include animated diagrams.
+
+Web4 Capability Section
+
+Explain economic autonomy.
+
+Key points:
+
+Autonomous Payments
+AI agents can pay for premium travel data.
+
+Smart Contract Settlement
+Travel bookings finalized via blockchain.
+
+Machine-to-Machine Negotiation
+Agents negotiate with airline systems.
+
+Final CTA Section
+
+Buttons:
+
+Start Planning
+Launch Dashboard
+
+Footer
+
+Include:
+
+social links
+
+privacy
+
+terms
+
+copyright
+
+User Dashboard
+
+The dashboard must look similar to ChatGPT combined with a travel control panel.
+
+Layout:
+
+Left Sidebar
+Main Chat Panel
+Right Map Panel
+
+Left Sidebar
+
+Contains:
+
+User wallet address
+
+Trip history
+
+Saved trips
+
+Settings
+
+Trip history should appear similar to ChatGPT conversation history.
+
+Main Chat Panel
+
+This is where users interact with the AI swarm.
+
+Components:
+
+Chat messages
+
+User prompts
+
+AI responses
+
+Prompt input field
+
+Example prompt:
+
+"I want to travel from Florida to California on the 7th with a $100 budget."
+
+AI response should generate travel options.
+
+Example output:
+
+Option 1
+Airline: Delta
+Price: $95
+Stops: 1
+Duration: 5h 30m
+
+Option 2
+Airline: JetBlue
+Price: $102
+Stops: Direct
+Duration: 4h 10m
+
+Each option should appear as a card component.
+
+Right Map Panel
+
+Embed Mapbox GL JS.
+
+Features:
+
+Detect user location
+
+Display origin and destination
+
+Animate flight routes
+
+Show airport markers
+
+Update dynamically when travel options change.
+
+Wallet Integration
+
+Add a wallet connect button.
+
+Use:
+
+WalletConnect v2
+
+Supported wallets:
+
+MetaMask
+Coinbase Wallet
+WalletConnect
+
+Display:
+
+Connected wallet address
+Wallet balance
+
+Allow signing of transactions (mocked).
+
+Travel Booking Flow
+
+Simulate the process:
+
+1 User enters travel prompt
+
+2 AI swarm processes request
+
+Display loading states:
+
+Scout scanning destinations
+Logician calculating optimal routes
+Negotiator searching airline deals
+Auditor verifying budget
+
+3 Travel options displayed
+
+4 User selects itinerary
+
+5 User signs escrow transaction (mocked)
+
+6 Booking confirmation shown
+
+AI Swarm Visualization
+
+When processing a request, show animated swarm activity.
+
+Example indicators:
+
+Scout scanning globe
+
+Logician drawing travel routes
+
+Negotiator interacting with airline nodes
+
+Auditor calculating cost
+
+Components to Build
+
+Navbar
+
+Hero Section
+
+Feature Cards
+
+Agent Cards
+
+CTA Buttons
+
+Wallet Connect Button
+
+Sidebar
+
+Chat Message Bubble
+
+Prompt Input
+
+Travel Option Card
+
+Map Container
+
+Loading Animation
+
+Folder Structure
+
+Use this structure.
+
+src
+
+components
+  hero
+  navbar
+  wallet
+  chat
+  map
+  cards
+
+pages
+  Landing
+  Dashboard
+
+store
+  walletStore
+  tripStore
+
+services
+  wallet
+  ai
+  travel
+
+hooks
+
+utils
+API Placeholders
+
+Simulate backend endpoints:
+
+POST /api/plan-trip
+
+POST /api/book-flight
+
+GET /api/trip-history
+
+Responses should be mocked.
+
+Performance Requirements
+
+lazy load Three.js assets
+
+optimize animation performance
+
+keep bundle size small
+
+ensure smooth animations
+
+Responsiveness
+
+The platform must be fully responsive.
+
+Support:
+
+Desktop
+Tablet
+Mobile
+
+Mobile dashboard should collapse sidebar.
+
+Design Quality
+
+The final UI must look:
+
+futuristic
+
+polished
+
+high-end
+
+Web3 native
+
+AI focused
+
+The goal is a visually stunning AI travel control center.

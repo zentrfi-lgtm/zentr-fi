@@ -1,0 +1,16 @@
+{
+  "accountAssociation": {
+    "header": "eyJmaWQiOjI4NTgzNzAsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHg3YTZmNDU1ZjJmM2JDMTkxYTdhQzU2ZDBEYzIzRmY4NDVjNmNhNEQxIn0",
+    "payload": "eyJkb21haW4iOiJ3d3cuemVudHJmaS5jb20ifQ",
+    "signature": "CYbrb+CeORTwmy8oNMgNxMZy1BSSx2jxRLZemXhE4GouhfoQZFp/9mZ86u7a2ZhQduUc+Lc1OIuc5EdYaKnhqRs="
+  },
+  "miniApp": {
+    "version": "1",
+    "name": "Zentrfi Travel",
+    "homeUrl": "https://www.zentrfi.com/miniapp",
+    "iconUrl": "https://www.zentrfi.com/icon.png",
+    "splashImageUrl": "https://www.zentrfi.com/splash.png",
+    "splashBackgroundColor": "#0000fe",
+    "webhookUrl": "https://www.zentrfi.com/api/webhook/miniapp"
+  }
+}

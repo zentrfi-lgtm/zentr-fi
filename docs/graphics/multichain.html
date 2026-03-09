@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { display: flex; align-items: center; justify-content: center; min-height: 100vh; background: #0a0a0a; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+  .card {
+    width: 1200px; height: 675px;
+    background: linear-gradient(145deg, #1a0a0f 0%, #1f0d14 40%, #250f18 100%);
+    border-radius: 24px;
+    padding: 72px 80px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: -200px; right: -200px;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(244,63,94,0.12) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .card::after {
+    content: '';
+    position: absolute;
+    bottom: -150px; left: -100px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(251,113,133,0.08) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .top { position: relative; z-index: 1; }
+  .badge {
+    display: inline-block;
+    background: rgba(244,63,94,0.15);
+    border: 1px solid rgba(244,63,94,0.3);
+    color: #fb7185;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 8px 18px;
+    border-radius: 100px;
+    margin-bottom: 32px;
+  }
+  .title {
+    font-size: 52px;
+    font-weight: 700;
+    color: #f1f5f9;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    max-width: 750px;
+  }
+  .title span { color: #fb7185; }
+  .desc {
+    font-size: 20px;
+    color: #94a3b8;
+    line-height: 1.6;
+    max-width: 680px;
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+  }
+  .logo { font-size: 22px; font-weight: 700; color: #f1f5f9; letter-spacing: -0.5px; }
+  .logo span { color: #fb7185; }
+  .url { font-size: 16px; color: #64748b; font-weight: 500; }
+  .chain-flow {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+    opacity: 0.1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+  .chain-node {
+    width: 200px;
+    padding: 14px 20px;
+    border: 1.5px solid #fb7185;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fb7185;
+  }
+  .chain-arrow {
+    font-size: 24px;
+    color: #fb7185;
+  }
+  .dots {
+    position: absolute;
+    top: 40px; right: 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 8px);
+    gap: 12px;
+    opacity: 0.15;
+    z-index: 0;
+  }
+  .dots div { width: 8px; height: 8px; background: #fb7185; border-radius: 50%; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="dots">
+    <div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div>
+  </div>
+  <div class="chain-flow">
+    <div class="chain-node">USDC on Polygon</div>
+    <div class="chain-arrow">↓</div>
+    <div class="chain-node">LI.FI Bridge</div>
+    <div class="chain-arrow">↓</div>
+    <div class="chain-node">Pay on Base</div>
+  </div>
+  <div class="top">
+    <div class="badge">Coming Soon</div>
+    <div class="title"><span>Multi-Chain</span> Payments</div>
+    <div class="desc">Pay for flights with tokens from any blockchain. LI.FI SDK handles cross-chain bridging automatically in a single transaction — no more manual bridging before you can book.</div>
+  </div>
+  <div class="bottom">
+    <div class="logo">Zentr<span>Fi</span></div>
+    <div class="url">zentrfi.com</div>
+  </div>
+</div>
+</body>
+</html>
