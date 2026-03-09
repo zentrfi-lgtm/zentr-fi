@@ -33,3 +33,5 @@ export async function connectDB(): Promise<typeof mongoose> {
   cache.conn = await cache.promise;
   return cache.conn;
 }
+
+//mongo initialized
